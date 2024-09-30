@@ -31,7 +31,7 @@ A modular and customizable HTML, CSS, and JavaScript starter template for buildi
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/farjadtariq/Simple-HTMLCSSJS-Portfolio-Template
+    git clone https://github.com/farjadtariq/Simple-HTMLCSSJS-Portfolio-Template
    ```
 
 2. **Navigate to the project directory**:
