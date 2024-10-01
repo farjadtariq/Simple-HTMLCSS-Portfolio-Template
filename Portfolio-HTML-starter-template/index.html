@@ -4,154 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Personal Portfolio</title>
+    <!-- Link to external CSS file for custom styles -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Include Font Awesome -->
+    <!-- Include Font Awesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            background-color: #f4f4f4;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-        nav ul {
-            display: inline-block;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 30px;
-        }
-        nav ul li a:hover {
-            color: #ccc; /* Light gray color when hovered */
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-        .category {
-            background-color: #f9f9f9;
-            padding: 15px;
-            margin-bottom: 1px;
-            border-radius: 5px;
-        }
-        .category h3 {
-            margin-top: 0;
-        }
-        .tag-cloud {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .tag {
-            background-color: #e0e0e0;
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 0.9em;
-        }
-        .project-cards {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-        .project-card {
-            background-color: #e0e0e0;
-            padding: 20px;
-            border-radius: 20px;
-            width: 30%;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .project-card h3 {
-            margin-top: 0;
-        }
-        .project-card .tag {
-            display: inline-block;
-            background-color: #333;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 10px;
-            margin-right: 5px;
-            margin-top: 10px;
-        }
-        .blog-posts {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .blog-post h3 {
-            margin: 0;
-        }
-        .blog-post h3 a {
-            color: #333;
-            text-decoration: none;
-        }
-        .blog-post h3 a:hover {
-            color: #555; /* Slightly darker color when hovered */
-        }
-        .blog-post .publish-date {
-            font-size: 0.9em;
-            color: #777;
-            margin-top: 1px;
-        }
-        .blog-post .description {
-            margin-top: 1px;
-        }
-        .see-all-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .see-all-btn:hover {
-            background-color: #555;
-        }
-        .social-icons {
-            margin-top: 20px;
-        }
-        .social-icons a {
-            color: #333;
-            text-decoration: none;
-            font-size: 1.5em;
-            margin-right: 15px;
-            margin: 20px;
-        }
-        .social-icons a:hover {
-            color: #555; /* Slightly darker color when hovered */
-        }
-    </style>
 </head>
 <body>
+    <!-- Header section with name and professional titles -->
     <header>
         <h1>Your Name</h1>
         <p>Data Scientist | AI Enthusiast | Software Engineer</p>
     </header>
 
+    <!-- Navigation bar -->
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -163,14 +28,17 @@
     </nav>
 
     <main>
+        <!-- About Me section -->
         <section id="about">
             <h2>About Me</h2>
             <p>Brief introduction about yourself and your professional journey.</p>
         </section>
 
+        <!-- Areas of Expertise section -->
         <section id="expertise">
             <h2>Areas of Expertise</h2>
             
+            <!-- Data Science & AI category -->
             <div class="category">
                 <h3>Data Science & AI</h3>
                 <div class="tag-cloud">
@@ -182,6 +50,7 @@
                 </div>
             </div>
 
+            <!-- Software Development category -->
             <div class="category">
                 <h3>Software Development</h3>
                 <div class="tag-cloud">
@@ -193,6 +62,7 @@
                 </div>
             </div>
 
+            <!-- Business & Economics category -->
             <div class="category">
                 <h3>Business & Economics</h3>
                 <div class="tag-cloud">
@@ -204,6 +74,7 @@
                 </div>
             </div>
 
+            <!-- Cognitive Sciences category -->
             <div class="category">
                 <h3>Cognitive Sciences</h3>
                 <div class="tag-cloud">
@@ -215,6 +86,7 @@
             </div>
         </section>
 
+        <!-- Projects section -->
         <section id="projects">
             <h2>Projects</h2>
             <p>Showcase your projects here. Each project can be a separate div with a title, description, and relevant tags.</p>
@@ -240,6 +112,7 @@
             </div>
         </section>
 
+        <!-- Blog section -->
         <section id="blog">
             <h2>Blog</h2>
             <p>Your latest blog posts or articles can be listed here.</p>
@@ -263,6 +136,7 @@
             <button class="see-all-btn">See All</button>
         </section>
 
+        <!-- Contact section -->
         <section id="contact">
             <h2>Contact</h2>
             <p>Your contact information and links to professional profiles (GitHub, LinkedIn, etc.)</p>
@@ -276,6 +150,7 @@
         </section>
     </main>
 
+    <!-- Footer section -->
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
