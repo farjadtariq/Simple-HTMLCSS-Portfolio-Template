@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,7 +54,7 @@
         .category {
             background-color: #f9f9f9;
             padding: 15px;
-            margin-bottom: 15px;
+            margin-bottom: 1px;
             border-radius: 5px;
         }
         .category h3 {
@@ -67,6 +70,79 @@
             padding: 5px 10px;
             border-radius: 15px;
             font-size: 0.9em;
+        }
+        .project-cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .project-card {
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 20px;
+            width: 30%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .project-card h3 {
+            margin-top: 0;
+        }
+        .project-card .tag {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin-right: 5px;
+            margin-top: 10px;
+        }
+        .blog-posts {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .blog-post h3 {
+            margin: 0;
+        }
+        .blog-post h3 a {
+            color: #333;
+            text-decoration: none;
+        }
+        .blog-post h3 a:hover {
+            color: #555; /* Slightly darker color when hovered */
+        }
+        .blog-post .publish-date {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 1px;
+        }
+        .blog-post .description {
+            margin-top: 1px;
+        }
+        .see-all-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .see-all-btn:hover {
+            background-color: #555;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin-right: 15px;
+            margin: 20px;
+        }
+        .social-icons a:hover {
+            color: #555; /* Slightly darker color when hovered */
         }
     </style>
 </head>
@@ -142,16 +218,61 @@
         <section id="projects">
             <h2>Projects</h2>
             <p>Showcase your projects here. Each project can be a separate div with a title, description, and relevant tags.</p>
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3>Project Title 1</h3>
+                    <p>Short description of the project.</p>
+                    <span class="tag">Tag1</span>
+                    <span class="tag">Tag2</span>
+                </div>
+                <div class="project-card">
+                    <h3>Project Title 2</h3>
+                    <p>Short description of the project.</p>
+                    <span class="tag">Tag1</span>
+                    <span class="tag">Tag2</span>
+                </div>
+                <div class="project-card">
+                    <h3>Project Title 3</h3>
+                    <p>Short description of the project.</p>
+                    <span class="tag">Tag1</span>
+                    <span class="tag">Tag2</span>
+                </div>
+            </div>
         </section>
 
         <section id="blog">
             <h2>Blog</h2>
             <p>Your latest blog posts or articles can be listed here.</p>
+            <div class="blog-posts">
+                <article class="blog-post" id="article-title-1">
+                    <h3><a href="#article-title-1">Article Title 1</a></h3>
+                    <p class="publish-date">Published on: January 1, 2024</p>
+                    <p class="description">A brief description of the first article.</p>
+                </article>
+                <article class="blog-post" id="article-title-2">
+                    <h3><a href="#article-title-2">Article Title 2</a></h3>
+                    <p class="publish-date">Published on: February 1, 2024</p>
+                    <p class="description">A brief description of the second article.</p>
+                </article>
+                <article class="blog-post" id="article-title-3">
+                    <h3><a href="#article-title-3">Article Title 3</a></h3>
+                    <p class="publish-date">Published on: March 1, 2024</p>
+                    <p class="description">A brief description of the third article.</p>
+                </article>
+            </div>
+            <button class="see-all-btn">See All</button>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
             <p>Your contact information and links to professional profiles (GitHub, LinkedIn, etc.)</p>
+            <div class="social-icons">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/yourusername" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
         </section>
     </main>
 
