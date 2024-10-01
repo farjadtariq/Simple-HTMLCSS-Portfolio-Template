@@ -41,6 +41,9 @@ This is a simple HTML/CSS starter template for creating a personal portfolio web
 ### Customization
 
 - **Navigation**: Update the navigation items in the `<nav>` section of `index.html`.
+- **Header**: Update your name and job title in the `<header>` section of `index.html`.
+- **About**: Add your bio and skills in the `#about` section of `index.html`.
+- **Services**: Add your skills or expertise in the `#expertise` section of `index.html`.
 - **Projects**: Add your project details in the `#projects` section of `index.html`.
 - **Blog**: Add your blog post details in the `#blog` section of `index.html`.
 - **Contact**: Update your contact information and social media links in the `#contact` section of `index.html`.
