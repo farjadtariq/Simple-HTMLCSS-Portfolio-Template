@@ -68,4 +68,4 @@ Then, add your social media links in the contact section:
 ```
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE.md](LICENSE) file for details.
